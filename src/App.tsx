@@ -23,7 +23,7 @@ function App() {
             <Route element={<MainComponent signOut={signOut} user={user}/>}>
               <Route path="/" element={<VideoUploadComponent />}></Route>
               <Route path="/history" element={<ShortsHistoryComponent />}></Route>
-              <Route path="/:id" element={<VideoShortifyComponent />}></Route>
+              <Route path="/history/:id" element={<VideoShortifyComponent />}></Route>
               <Route path="/shorts/:id/:highlight" element={<FinalShortComponent />}></Route>
             </Route>
           </Routes>
